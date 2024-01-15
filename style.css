@@ -1,48 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: "Mulish", sans-serif;
+    box-sizing: border-box;
 }
-.good-color{
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #FF5400;
+    color: #FFF;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.section-heading{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.primary-text{
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.good-color {
     color: #FF5400;
 }
-.four-four{
+
+.four-four {
     max-width: 1440px;
     margin: 40px auto;
     padding: 10px 80px;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-img{
+
+.nav-img {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
+
 nav .nav-img .nav-tile {
     font-size: 2.25rem;
     font-weight: 800;
 }
-nav ul{
+
+nav ul {
     display: flex;
 }
-nav ul li{
-        margin-right: 20px;
-        list-style: none;
-        text-decoration: none;
-        padding-top: 10px;
+
+nav ul li {
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 10px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
     color: #424247;
 }
-.burgerButton{
+
+.burgerButton {
     font-size: 30px;
     color: rgb(248, 8, 8);
     float: right;
@@ -50,21 +85,95 @@ nav ul li a{
     margin-right: 40px;
     display: none;
 }
-#burgerInput{
+
+#burgerInput {
     display: none;
 }
+
+.banner {
+    background-image: url('Images/Group13\(1\)\(1\).png');
+    background-position: center ;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.banner-text {
+    text-align: center;
+    font-weight: 400;
+    color: #FFF;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.banner-form {
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.banner-form input,
+select {
+    border-radius: 8px;
+    background: #FFF;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    padding: 10px;
+}
+.popular-tours{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.tour-details .tour-list{
+    list-style-type: inside disc;
+    margin-left: 20px;
+}
+ .tour-details .tour-list li{
+    margin-bottom: 8px;
+}
+.tour-details .tour-text, .tour-list{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tour-details .btn-primary{
+    padding: 10px 25px;
+}
+
+
 @media screen and (max-width: 600px) {
-    .four-four{
+    .four-four {
         margin: 20px auto;
         padding: 10px;
     }
-    .burgerButton{
+
+    .burgerButton {
         display: block;
     }
-    nav ul{
+
+    nav ul {
         position: fixed;
         width: 100%;
-        background: rgba(137, 88, 88, 0.364);
+        background: rgba(255, 149, 103, 0.487);
         top: 105px;
         left: 100%;
         text-align: center;
@@ -73,10 +182,27 @@ nav ul li a{
         padding: 10px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 20px;
+        color: #000000;
     }
-    #burgerInput:checked ~ ul{
+
+    #burgerInput:checked~ul {
         left: 0;
+    }
+    .banner{
+        padding: 5px;
+    }
+    .banner-title {
+        font-size: 2rem;
+    }
+    .banner-form {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .popular-tours{
+        flex-direction: column;
+        padding: 15px;
     }
 }
