@@ -153,7 +153,7 @@ select {
     outline: none;
     border: none;
     font-weight: 400;
-    padding: 10px;
+    padding: 15px;
 }
 
 .popular-tours {
@@ -273,12 +273,12 @@ select {
 .great-causes .reasons-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .great-causes .reasons-card .Rcard {
-    flex-basis: 600px;
+    flex-basis: 500px;
     text-align: left;
     padding: 30px;
 }
@@ -435,6 +435,10 @@ select {
     border: 1px solid #FF5400;
     padding: 15px;
 }
+.newsletter .newsletter-details .secondary-text {
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(19, 19, 24, 0.10);
+}
 
 .newsletter .newsletter-details input {
     padding: 20px;
@@ -470,11 +474,57 @@ select {
     text-align: center;
 }
 
-.newsletter .newsletter-img .sticker .larg {
+.newsletter .newsletter-img .sticker .large {
     font-weight: 800;
     font-size: 2rem;
     color: #FFF;
     text-align: center;
+}
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top:100px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgba(19, 19, 24, 0.10);
+}
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.footer-head .footer-heading{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.footer-content .secondary-text{
+    text-align: center;
+}
+.footer-icons{
+ display: flex;
+ margin-top: 15px;
+ gap: 20px;
+}
+.footer-icons a{
+ display: flex;
+ text-decoration: none;
+ font-size: 2rem;
+ color: #131318;
+}
+.copyright-text{
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 100px;
 }
 
 
@@ -583,17 +633,20 @@ select {
     }
 
     .newsletter .newsletter-img .sticker {
-        padding: 15px;
-        top: 65%;
+        padding: 13px;
     }
 
     .newsletter .newsletter-img .sticker .small {
         font-size: .8rem;
     }
 
-    .newsletter .newsletter-img .sticker .larg {
+    .newsletter .newsletter-img .sticker .large {
         font-size: 1rem;
     }
-
-
+    .footer-content{
+        max-width: 90%;
+    }
+    .footer-head .footer-heading{
+        font-size: 1.85rem;
+}
 }
