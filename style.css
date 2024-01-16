@@ -26,12 +26,27 @@
     font-weight: 800;
 }
 
+.secondary-title {
+    color: #131318;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
 .primary-text {
     color: rgba(19, 19, 24, 0.70);
     font-weight: 400;
     line-height: 1.625rem;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.secondary-text {
+    color: #5A5A5D;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .good-color {
@@ -97,7 +112,7 @@ nav ul li a {
     background-image: url('Images/Group13\(1\)\(1\).png');
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,6 +164,10 @@ select {
     gap: 50px;
 }
 
+.tour-details {
+    width: 50%;
+}
+
 .tour-details .tour-list {
     list-style-type: inside disc;
     margin-left: 20px;
@@ -164,8 +183,16 @@ select {
     margin-bottom: 15px;
 }
 
-.tour-details .btn-primary {
+.tour-details .btn-primary, .discount-btn {
     padding: 10px 25px;
+}
+
+.tour-img {
+    width: 50%;
+}
+
+.tour-img img {
+    width: 100%;
 }
 
 /* destination section  */
@@ -234,12 +261,105 @@ select {
     grid-column: 6/13;
     grid-row: 3/4;
 }
+/* choose us section */
+.great-causes{
+    text-align: center;
+    margin-top: 100px;
+}
+.great-causes .reasons-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+.great-causes .reasons-card .Rcard{
+    flex-basis: 600px;
+    text-align: left;
+    padding: 30px;
+}
+.great-causes .reasons-card .Rcard-1{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.great-causes .reasons-card .Rcard-2{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.great-causes .reasons-card .Rcard-3{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/* deals section  */
+.deals{
+    margin-top: 100px;
+    text-align: center;
+}
+.deals .pool-img{
+    background-image: url('Images/Group39.png');
+    background-position: bottom;
+    background-size: cover;
+    height: 70vh;
+    /* position: relative; */
+    border-radius: 16px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.deals .pool-img2{
+    background-image: url('Images/Group40.png');
+    justify-content: start;
+}
+.deals .pool-content{
+    /* position: absolute;
+    left: 43%;
+    top: 16%; */
+ width: 50%;
+ border-radius: 16px;
+border: 2px solid #FFF;
+background: rgba(255, 255, 255, 0.80);
+backdrop-filter: blur(2.5px);
+text-align: left;
+padding: 20px;
+margin: 44px;
+}
+.deals .pool-content2{
+    /* left: 7%; */
+}
+.deals .conditions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.deals .conditions .condition-list{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    list-style: none;
+    gap: 5px;
+
+}
+.deals .conditions .condition-list .secondary-text{
+/* margin-top: ; */
+
+}
+.deals .pool-content .good-color{
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
 
 
 @media screen and (max-width: 600px) {
     .section-heading {
         font-size: 2rem;
     }
+
     .four-four {
         margin: 20px auto;
         padding: 0 10px;
@@ -252,7 +372,8 @@ select {
     nav ul {
         position: fixed;
         width: 100%;
-        background: rgba(255, 149, 103, 0.487);
+        background: #424247d8;
+        text-shadow: 2px 2px 4px #000000;
         top: 105px;
         left: 100%;
         text-align: center;
@@ -263,7 +384,7 @@ select {
 
     nav ul li a {
         font-size: 20px;
-        color: #000000;
+        color: #ffffff;
     }
 
     #burgerInput:checked~ul {
@@ -289,12 +410,42 @@ select {
         padding: 15px;
     }
 
+    .tour-details {
+        width: 100%;
+    }
+
+    .tour-img {
+        width: 100%;
+    }
+
     .destinations .destination-img {
         display: flex;
         flex-direction: column;
-        gap: 15px 0;
     }
+
     .destination-img img {
-        height: 300px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 8px;
     }
+    .deals .pool-img{
+        justify-content: center;
+        align-items: end;
+    }
+    .deals .pool-img2{
+        justify-content: center;
+    }
+    .deals .pool-content{
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .deals .conditions{
+        flex-wrap: wrap;
+    }
+    .deals .conditions .condition-list .secondary-text{
+        line-height: normal;
+        font-size: 1.5rem;
+        }
+
 }
