@@ -17,7 +17,7 @@
     background: #FF5400;
     color: #FFF;
     font-weight: 700;
-    padding: 10px;
+    padding: 15px;
 }
 
 .section-heading {
@@ -184,7 +184,8 @@ select {
 }
 
 .tour-details .btn-primary,
-.discount-btn, .mount-btn {
+.discount-btn,
+.mount-btn {
     padding: 10px 25px;
 }
 
@@ -387,7 +388,8 @@ select {
     font-weight: 700;
     line-height: 26px;
 }
-.mountain-details .mountain-text li{
+
+.mountain-details .mountain-text li {
     color: #131318;
     font-weight: 700;
     line-height: 26px;
@@ -398,11 +400,13 @@ select {
     width: 50%;
     position: relative;
 }
-.mountain-video video{
+
+.mountain-video video {
     width: 100%;
     border-radius: 18px;
 }
-.mountain-video .mountain-text{
+
+.mountain-video .mountain-text {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -412,6 +416,62 @@ select {
     font-size: 1.75rem;
     transform: translate(-50%, -50%);
     line-height: 36px
+}
+
+.newsletter {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter .newsletter-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 35%;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 10px;
+}
+
+.newsletter .newsletter-details input {
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    outline: none;
+    border: none;
+}
+
+.newsletter .newsletter-img {
+    width: 60%;
+    position: relative;
+}
+
+.newsletter .newsletter-img img {
+    width: 100%;
+}
+
+.newsletter .newsletter-img .sticker {
+    border-radius: 16px;
+    background: #FF5400;
+    position: absolute;
+    transform: rotate(-19.628deg);
+    padding: 20px;
+    top: 68%;
+    left: 62%;
+}
+.newsletter .newsletter-img .sticker .small{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #FFF;
+text-align: center;
+}
+.newsletter .newsletter-img .sticker .larg{
+    font-weight: 800;
+    font-size: 2rem;
+    color: #FFF;
+text-align: center;
 }
 
 
@@ -508,16 +568,19 @@ select {
         flex-wrap: wrap;
     }
 
-    .deals .conditions  .secondary-text {
+    .deals .conditions .secondary-text {
         line-height: normal;
         font-size: 1.86rem;
     }
+
     .mountains {
         flex-direction: column;
     }
+
     .mountain-details {
         width: 100%;
     }
+
     .mountain-video {
         width: 100%;
     }
