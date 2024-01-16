@@ -508,9 +508,18 @@ select {
         flex-wrap: wrap;
     }
 
-    .deals .conditions .condition-list .secondary-text {
+    .deals .conditions  .secondary-text {
         line-height: normal;
-        font-size: 1.5rem;
+        font-size: 1.86rem;
+    }
+    .mountains {
+        flex-direction: column;
+    }
+    .mountain-details {
+        width: 100%;
+    }
+    .mountain-video {
+        width: 100%;
     }
 
 }
