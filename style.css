@@ -201,6 +201,7 @@ select {
 .destinations {
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .destinations .destination-img {
@@ -262,6 +263,28 @@ select {
 .destination-img .img-7 {
     grid-column: 6/13;
     grid-row: 3/4;
+}
+
+/* cabin section  */
+.cabins {
+    text-align: center;
+}
+
+.cabins .cabin-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cabins .cabin-img-container .cabin-img {
+    text-align: left;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+.cabins .cabin-img-container .cabin-img img{
+    width: 100%;
 }
 
 /* choose us section */
@@ -435,6 +458,7 @@ select {
     border: 1px solid #FF5400;
     padding: 15px;
 }
+
 .newsletter .newsletter-details .secondary-text {
     padding-bottom: 15px;
     border-bottom: 2px solid rgba(19, 19, 24, 0.10);
@@ -462,66 +486,73 @@ select {
     background: #FF5400;
     position: absolute;
     transform: rotate(-19.628deg);
-    padding: 20px;
+    padding: 15px;
     top: 68%;
     left: 62%;
 }
 
 .newsletter .newsletter-img .sticker .small {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #FFF;
     text-align: center;
 }
 
 .newsletter .newsletter-img .sticker .large {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #FFF;
     text-align: center;
 }
-footer{
+
+footer {
     background: rgba(19, 19, 24, 0.05);
     margin-top: 100px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 60%;
     margin: 0 auto;
-    padding-top:100px;
+    padding-top: 100px;
     padding-bottom: 50px;
     border-bottom: 2px solid rgba(19, 19, 24, 0.10);
 }
-.footer-head{
+
+.footer-head {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
     margin-bottom: 10px;
 }
-.footer-head .footer-heading{
+
+.footer-head .footer-heading {
     font-size: 2rem;
     font-weight: 800;
 }
-.footer-content .secondary-text{
+
+.footer-content .secondary-text {
     text-align: center;
 }
-.footer-icons{
- display: flex;
- margin-top: 15px;
- gap: 20px;
+
+.footer-icons {
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
 }
-.footer-icons a{
- display: flex;
- text-decoration: none;
- font-size: 2rem;
- color: #131318;
+
+.footer-icons a {
+    display: flex;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #131318;
 }
-.copyright-text{
+
+.copyright-text {
     margin-top: 50px;
     text-align: center;
     padding-bottom: 100px;
@@ -602,6 +633,11 @@ footer{
         object-fit: cover;
         border-radius: 8px;
     }
+    .cabins .cabin-img-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
 
     .deals .pool-img {
         justify-content: center;
@@ -643,10 +679,12 @@ footer{
     .newsletter .newsletter-img .sticker .large {
         font-size: 1rem;
     }
-    .footer-content{
+
+    .footer-content {
         max-width: 90%;
     }
-    .footer-head .footer-heading{
+
+    .footer-head .footer-heading {
         font-size: 1.85rem;
-}
+    }
 }
