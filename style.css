@@ -423,6 +423,7 @@ select {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .newsletter .newsletter-details {
@@ -432,7 +433,7 @@ select {
     width: 35%;
     border-radius: 16px;
     border: 1px solid #FF5400;
-    padding: 10px;
+    padding: 15px;
 }
 
 .newsletter .newsletter-details input {
@@ -461,17 +462,19 @@ select {
     top: 68%;
     left: 62%;
 }
-.newsletter .newsletter-img .sticker .small{
+
+.newsletter .newsletter-img .sticker .small {
     font-weight: 400;
     font-size: 1.5rem;
     color: #FFF;
-text-align: center;
+    text-align: center;
 }
-.newsletter .newsletter-img .sticker .larg{
+
+.newsletter .newsletter-img .sticker .larg {
     font-weight: 800;
     font-size: 2rem;
     color: #FFF;
-text-align: center;
+    text-align: center;
 }
 
 
@@ -530,11 +533,12 @@ text-align: center;
         padding: 15px;
     }
 
-    .tour-details {
-        width: 100%;
-    }
-
-    .tour-img {
+    .tour-details,
+    .tour-img,
+    .mountain-details,
+    .mountain-video,
+    .newsletter .newsletter-details,
+    .newsletter .newsletter-img {
         width: 100%;
     }
 
@@ -573,16 +577,23 @@ text-align: center;
         font-size: 1.86rem;
     }
 
-    .mountains {
+    .mountains,
+    .newsletter {
         flex-direction: column;
     }
 
-    .mountain-details {
-        width: 100%;
+    .newsletter .newsletter-img .sticker {
+        padding: 15px;
+        top: 65%;
     }
 
-    .mountain-video {
-        width: 100%;
+    .newsletter .newsletter-img .sticker .small {
+        font-size: .8rem;
     }
+
+    .newsletter .newsletter-img .sticker .larg {
+        font-size: 1rem;
+    }
+
 
 }
